@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Dado con Flexbox</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Un dado hecho apartir de Flexbox, css puro, no sass">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+	<h1>Dado hecho con Flexbox</h1>
+	<p>Basado en el <a href="https://davidwalsh.name/flexbox-dice">post</a> de Landon Schropp.</p>
+	<p>Este ejercicio es una práctica para aprender las propiedades básicas del layout Flexbox</p>
+	</header>
+	<!-- contiene en el header titulo y descripcion del proyecto -->
+	<section>
+		<div class="cara-uno">
+			<span class="punto"></span>
+		</div>
+<!-- Se genero un div  para crear la cara uno,con un span se representan los puntos del dado -->
+		<div class="cara-dos">
+			<span class="punto"></span>
+			<span class="punto"></span>
+		</div>
+		<!-- Se creo un segundo div para representar la cara del dado con dos puntos representados con dos span -->
+		<div class="cara-tres">
+			<span class="punto"></span>
+			<span class="punto"></span>
+			<span class="punto"></span>
+		</div>
+		<!-- En el tercer div se representa la cara del dado con tres puntos usando 3 span para respresentar los puntos de esta cara -->
+		<div class="cara-cuatro">
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<!-- Con el div cuatro representamos la cara 4 del dado y solo se usan dos span ya que solo necesitamos dos columnas para posicionar los cuatro puntos de la cara -->
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<!-- a traves de esta clase se generan las columnas para posicionar y organizar los puntos -->
+		</div>
+		<div class="cara-cinco">
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<!-- representa el lado cinco de la cara posicionando dos puntos en dos columnas y usando la siguiente clase para el punto medio -->
+			<span class="punto medio"></span>
+			<!-- posiciona el punto medio necesario para la cara cinco -->
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<!-- organiza los puntos en columnas -->
+		</div>
+		<div class="cara-seis">
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<!-- Genera dos columnas con tres puntos en cada una parta representar la cara seis -->
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
